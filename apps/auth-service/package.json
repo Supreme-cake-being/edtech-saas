@@ -1,0 +1,11 @@
+{
+  "name": "@edtech/auth-service",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "lint": "eslint \"{src,apps,libs}/**/*.ts\"",
+    "clean": "rm -rf dist"
+  }
+}
