@@ -25,3 +25,7 @@ Thumbs.db
 .vscode/
 *.suo
 *.ntvs*
+
+# Prisma
+*.db
+*.db-journal
