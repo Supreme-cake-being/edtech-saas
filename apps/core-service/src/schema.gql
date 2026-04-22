@@ -1,0 +1,47 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CourseModel {
+  id: ID!
+  title: String!
+  description: String
+  ownerId: String!
+  status: CourseStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum CourseStatus {
+  DRAFT
+  PROCESSING
+  PUBLISHED
+  FAILED
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  myCourses: [CourseModel!]!
+  course(id: ID!): CourseModel!
+}
+
+type Mutation {
+  createCourse(input: CreateCourseInput!): CourseModel!
+  updateCourse(input: UpdateCourseInput!): CourseModel!
+  deleteCourse(id: ID!): Boolean!
+}
+
+input CreateCourseInput {
+  title: String!
+  description: String
+}
+
+input UpdateCourseInput {
+  id: ID!
+  title: String
+  description: String
+}
