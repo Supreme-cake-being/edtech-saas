@@ -6,7 +6,7 @@ import * as bcrypt from 'bcryptjs';
 import * as crypto from 'crypto';
 import { RegisterDto } from './dto/register.dto';
 import { StringValue } from 'ms';
-import { JwtPayload } from '@/types/jwtPayload';
+import { JwtPayload } from '../types/jwt-payload';
 
 @Injectable()
 export class AuthService {
