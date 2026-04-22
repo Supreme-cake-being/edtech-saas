@@ -1,4 +1,4 @@
-import { JwtPayload } from '@/types/jwtPayload';
+import { JwtPayload } from '../../types/jwt-payload';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PassportStrategy } from '@nestjs/passport';
